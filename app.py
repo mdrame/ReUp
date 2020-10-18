@@ -1,6 +1,7 @@
 from flask import Flask, render_template, redirect, request, url_for
 import requests
 import os 
+import stripe
 
 from pytube import YouTube
 
@@ -8,6 +9,15 @@ from pytube import YouTube
 
 # Created by Mohammed Draem 
 # HotSpot Liberia 
+
+# Activate ENV
+# source env/bin/activate
+# deactivate
+
+
+# Run flash 
+# flask run
+# Control + C = Stop server 
 
 
 
@@ -45,7 +55,7 @@ def about():
 def pp():
     # display only 
 
-    
+
     return render_template('privacypolicy.html') #home page
     
 
