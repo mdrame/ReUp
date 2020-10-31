@@ -8,11 +8,12 @@
             <script src="https://js.stripe.com/v3/"></script>
         </title>
         <link type="text/css" rel="stylesheet" href="static/styles/index.css">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='index.css')}}">
     </head>
 
     <body>
-        <div id="formWrap" class="formWrap">
-        <form action="/action_page.php" method="get">
+        <div id="formWrap" class="formWrap" style="background-color:black; overflow:hidden;" onmouseover="this.bgColor='white'">
+        <form action="/action_page.php" method="get" id="mainForm">
             <label for="carriers_label"> Carriers :</label>
             <select id="carriers" name="carriers">
                 <option value="MTN"> MTN - Lonstar </option>
@@ -33,6 +34,10 @@
             <button id="checkout-button" id="checkout-button">Checkout</button>
           </form>
         </div>
+        <div class="form">
+      
+
+
     </body>
 </html>
 

@@ -7,33 +7,23 @@
 
 
 body { 
+   color: black;
    font-size: 40px;
-   overflow: hidden;
+   
    
 }
 
 
 #formWrap {
-   position: relative;
    position: absolute;
    width: 50%;
-   height: 1000px;
+   height: auto;
    top: 50%;
    left: 50%;
    margin: -100px 0 0 -150px;
-   border: 3px solid red; 
-   /* background-color: white; */
-   /* overflow: hidden;   */
- }
-
-
- *mainForm {
-    background-color: white;
+   /* border: 3px solid green;    */
  }
 
 
 
 
-
-
- 
